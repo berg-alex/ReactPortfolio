@@ -1,0 +1,133 @@
+* {
+  background-color: black;
+}
+img.rounded-circle {
+  border: white solid 2px;
+  opacity: 40%;
+  height: 50vh;
+}
+
+image {
+  height: 150px;
+  width: 150px;
+}
+
+span {
+  position: relative;
+  bottom: 40px;
+  left: 50px;
+  background-color: transparent;
+  font-size: 25px;
+}
+
+.myText {
+  text-align: center;
+  color: white;
+  font-family: Odibee Sans;
+}
+
+#bodyText {
+  position: relative;
+  top: 20vh;
+}
+
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+div.col {
+ width:100%;max-width:none ;padding-left:0;padding-right:0 ! important; 
+}
+div.row {
+  width: 100vw; 
+}
+
+.main-center {
+  height: 30vh;
+  position: relative;
+  top: 20vh;
+  text-align: center;
+}
+
+
+
+
+
+
+
+.size {
+  position: relative;
+  top: 25vh;
+  height: 300px;
+}
+.background {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg, #d309e1 0%, rgb(156, 26, 255) 100%);
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.example-container div {
+  background:transparent;
+  background-size: 50px;
+  background-image: url(https://media-exp1.licdn.com/dms/image/C4D03AQHHtCg96ikUyQ/profile-displayphoto-shrink_800_800/0/1619643609555?e=1628121600&v=beta&t=-qb9KNccXWh73P9ExxqvGj1NVjDyOxL6azHqbJym4cU);
+  border-radius: 30px;
+  width: 50px;
+  height: 50px;
+}
+
+.refresh {
+  padding: 10px;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 10px;
+  width: 20px;
+  height: 20px;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}

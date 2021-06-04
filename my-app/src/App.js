@@ -31,7 +31,7 @@ class App extends Component {
             animate = {{rotateY:360}}
       
 
-    ><Image src="/me.jpg" roundedCircle /></motion.div> 
+    ><Image src="https://media-exp1.licdn.com/dms/image/C4D03AQHHtCg96ikUyQ/profile-displayphoto-shrink_400_400/0/1619643609555?e=1628121600&v=beta&t=Wrs5ACDZ37BV1I-DpPPFTui-waLyXy3PxXn56TRmkZ4" roundedCircle /></motion.div> 
               
             
           </Col>
@@ -39,6 +39,9 @@ class App extends Component {
             
             <div class='myText' id='bodyText'> 
               This is a variation of my portfolio using react-bootstrap and Framer Motion.
+            </div>
+            <div class='mySkills'>
+
             </div>
 
           </Col>

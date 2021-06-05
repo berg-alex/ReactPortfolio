@@ -9,11 +9,13 @@ img.rounded-circle {
   width: 100px;
   background-color: transparent;
   z-index: 10;
+  background-image: url(https://media-exp1.licdn.com/dms/image/C4D03AQHHtCg96ikUyQ/profile-displayphoto-shrink_800_800/0/1619643609555?e=1628121600&v=beta&t=-qb9KNccXWh73P9ExxqvGj1NVjDyOxL6azHqbJym4cU);
 }
 
 image {
   height: 150px;
   width: 150px;
+  background-image: url(https://media-exp1.licdn.com/dms/image/C4D03AQHHtCg96ikUyQ/profile-displayphoto-shrink_800_800/0/1619643609555?e=1628121600&v=beta&t=-qb9KNccXWh73P9ExxqvGj1NVjDyOxL6azHqbJym4cU);
 }
 
 span {

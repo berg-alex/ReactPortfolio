@@ -11,7 +11,7 @@ class Mynav extends Component {
     <Navbar.Brand href="#home">
       <img
         alt=""
-        src="/ReactBootstrapLogo.jpeg"
+        src="https://i.ibb.co/cJBdQmk/React-Bootstrap-Logo.jpg"
         width="30"
         height="30"
         className="d-inline-block align-top"
@@ -25,3 +25,6 @@ class Mynav extends Component {
 }
  
 export default Mynav;
+
+
+{/*<a href="https://imgbb.com/"><img src="https://i.ibb.co/cJBdQmk/React-Bootstrap-Logo.jpg" alt="React-Bootstrap-Logo" border="0"></a>*/}

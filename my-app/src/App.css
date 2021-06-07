@@ -1,14 +1,32 @@
 * {
+  /*background-color: white;*/
+  
+}
+
+#root {
   background-color: black;
-  z-index: 1;
+  height: 100vh;
 }
 img.rounded-circle {
   border: white solid 2px;
   /*opacity: 60%;*/
   height: 150px;
   width: 100px;
-  z-index: 100;
-  background-image: url(https://media-exp1.licdn.com/dms/image/C4D03AQHHtCg96ikUyQ/profile-displayphoto-shrink_800_800/0/1619643609555?e=1628121600&v=beta&t=-qb9KNccXWh73P9ExxqvGj1NVjDyOxL6azHqbJym4cU);
+}
+
+div.mySkills {
+  height: 20px;
+  /*width: 50px;*/
+  
+  z-index: 10;
+}
+div.progress {
+  right: 30px;
+  z-index: 10;
+  position: relative;
+  margin-left: 10px;
+  top: 20vh;
+
 }
 
 Image {
@@ -35,6 +53,9 @@ span {
 #bodyText {
   position: relative;
   top: 20vh;
+  z-index: 10;
+  left: 30px;
+  
 }
 
 
@@ -89,6 +110,7 @@ div.row {
   position: relative;
   top: 20vh;
   text-align: center;
+  float: right;
   /*background-image: url(https://media-exp1.licdn.com/dms/image/C4D03AQHHtCg96ikUyQ/profile-displayphoto-shrink_800_800/0/1619643609555?e=1628121600&v=beta&t=-qb9KNccXWh73P9ExxqvGj1NVjDyOxL6azHqbJym4cU);*/
   /*background-size: 100px 150px contain;*/
 }

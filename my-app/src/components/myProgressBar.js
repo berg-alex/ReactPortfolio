@@ -9,6 +9,9 @@ import ProgressBar from 'react-bootstrap/ProgressBar';
 class MyProgressBar extends Component {
   render() {
     return (
+      <div className='skillsList'>  
+            
+            
       <div className='allProgressBars'>
          <ProgressBar animated now={20} />
          <br/>
@@ -22,6 +25,7 @@ class MyProgressBar extends Component {
          <br/>
          <ProgressBar animated now={60} />
   
+      </div>
       </div>
     );
   }

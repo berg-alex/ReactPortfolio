@@ -1,6 +1,7 @@
 @media only screen and (max-width: 500px) {
   div#bodyText.myText {
-    top: 0;
+    top: 20vh;
+    font-size: 70%;
   }
   div.main-center {
     top: -5vh;
@@ -10,10 +11,13 @@
     position: relative;
     top: 10vh;
     right: 10vw;
+    font-size: 50%;
   }
   div.allProgressBars {
     position: relative;
-    top: 10vh;
+    height: 50%;
+    width: 50%;
+    margin-bottom: 20px;
   }
   span.myTitle {
     float: right;

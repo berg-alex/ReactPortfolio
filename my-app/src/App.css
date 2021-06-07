@@ -27,6 +27,24 @@
 
 }
 
+@media only screen and (max-height: 500px) {
+  
+  img.rounded-circle {
+    position: relative;
+    top: -10vh;
+  }
+
+  div#bodyText.myText {
+    position: relative;
+    top: 0;
+  }
+
+  div.skillsList {
+    position: relative;
+    top: -20vh;
+  }
+}
+
 lottie-player {
   width: 50px;
   position: relative;

@@ -48,6 +48,7 @@
     top: -5vh;
     left: 20vw;
   }
+  
 }
 
 lottie-player {
@@ -59,6 +60,7 @@ lottie-player {
 #root {
   background-color: black;
   height: 100vh;
+  position: fixed;
 }
 img.rounded-circle {
   border: white solid 2px;

@@ -9,7 +9,7 @@ import ProgressBar from 'react-bootstrap/ProgressBar';
 class MyProgressBar extends Component {
   render() {
     return (
-      <div>
+      <div className='allProgressBars'>
          <ProgressBar animated now={20} />
          <br/>
          <ProgressBar animated now={70} />

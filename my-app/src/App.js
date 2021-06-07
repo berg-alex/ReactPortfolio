@@ -26,6 +26,7 @@ class App extends Component {
             </div>
           </Col>
         </Row>
+
         <Row class='main'>
           <Col>
            
@@ -40,29 +41,22 @@ class App extends Component {
             transition={{ originX:0, repeat:Infinity, repeatDelay: 1, duration:1 }}
             animate = {{rotateY:360}}
       
-
-    ><Image src="https://i.ibb.co/vBcmkM0/me.jpg" roundedCircle z-index='10'/></motion.div> 
-              
-              <div class='mySkills'>
-                {/*<ProgressBar animated now={45} />
-                <ProgressBar striped variant="danger" now={80} />*/}
-                
-                
-              </div>
-
+            ><Image src="https://i.ibb.co/vBcmkM0/me.jpg" roundedCircle z-index='10'/></motion.div> 
             </Col>
           
           <Col style={{textAlign: 'center', color: 'white', top: '20vh'}}>
+            <div className='skillsList'>  
             <p>React.js</p>
             <p>Web Design</p>
             <p>Figma</p>
             <p>Framer</p>
             <p>Wireframing</p>
             <p>Prototyping</p>
+            </div>
           </Col>
+
           <Col>
             <MyProgressBar/>
-      
           </Col>
         </Row>
       </Container>

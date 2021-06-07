@@ -14,6 +14,10 @@ img.rounded-circle {
   width: 100px;
 }
 
+#nav {
+  background-color: navy;
+}
+
 div.mySkills {
   height: 20px;
   /*width: 50px;*/
@@ -72,6 +76,10 @@ Image {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
+}
+
+#nav {
+  background-color: navy;
 }
 
 .App-header {

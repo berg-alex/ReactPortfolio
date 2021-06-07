@@ -7,7 +7,7 @@ class Mynav extends Component {
   render() {
     return (
       <div>
-         <Navbar bg="dark" variant="dark">
+         <Navbar id='nav' bg="" variant="dark">
     <Navbar.Brand href="#home">
       <img
         alt=""

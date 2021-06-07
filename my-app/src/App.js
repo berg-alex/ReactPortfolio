@@ -23,7 +23,7 @@ class App extends Component {
             <div class='myText'>
              
               <Mynav/> <span className='myTitle'>React Project</span>
-              <a href='https://www.linkedin.com/in/alex-b-6676551b7/'>
+              <a className='Linkedin' href='https://www.linkedin.com/in/alex-b-6676551b7/'>
                 <lottie-player
                   autoplay
                   loop

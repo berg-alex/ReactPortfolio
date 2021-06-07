@@ -27,6 +27,12 @@
 
 }
 
+lottie-player {
+  width: 50px;
+  position: relative;
+  left: 20vw;
+}
+
 #root {
   background-color: black;
   height: 100vh;

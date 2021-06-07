@@ -7,6 +7,7 @@ import Mynav from './components/myNav';
 import ProgressBar from 'react-bootstrap/ProgressBar';
 import MyProgressBar from './components/myProgressBar';
 import {Container, Col, Row } from 'react-bootstrap';
+import * as LottiePlayer from "@lottiefiles/lottie-player";
 import './App.css';
 import './me.jpg';
 // import {index} from './index';
@@ -22,7 +23,14 @@ class App extends Component {
             <div class='myText'>
              
               <Mynav/> <span className='myTitle'>React Project</span>
-          
+              <a href='https://www.linkedin.com/in/alex-b-6676551b7/'>
+                <lottie-player
+                  autoplay
+                  loop
+                  mode="normal"
+                  src="https://assets9.lottiefiles.com/packages/lf20_pWLTA9.json"
+                ></lottie-player>
+              </a>
             </div>
           </Col>
         </Row>
@@ -33,6 +41,7 @@ class App extends Component {
               <div class='myText' id='bodyText'> 
                 This is a variation of my portfolio using react-bootstrap and Framer Motion. It'll be better than my main portfolio at <span className='webLink'>www.alexberg.app</span> when it's finished. The intention is to show a variety of skills vs a large quantity of a few skills.
               </div>
+              
             
           </Col>
           

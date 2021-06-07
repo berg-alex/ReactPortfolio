@@ -4,12 +4,12 @@
     font-size: 70%;
   }
   div.main-center {
-    top: -5vh;
+    top: 0;
     left: 25vw;
   }
   div.skillsList {
     position: relative;
-    top: 10vh;
+    top: 15vh;
     right: 10vw;
     font-size: 50%;
   }

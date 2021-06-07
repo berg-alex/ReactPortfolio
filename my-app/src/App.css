@@ -31,7 +31,7 @@
   
   img.rounded-circle {
     position: relative;
-    top: -10vh;
+    top: -30vh;
   }
 
   div#bodyText.myText {
@@ -41,7 +41,7 @@
 
   div.skillsList {
     position: relative;
-    top: -20vh;
+    top: -30vh;
   }
 }
 

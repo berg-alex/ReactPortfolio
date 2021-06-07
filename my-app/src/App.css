@@ -16,8 +16,8 @@
   div.allProgressBars {
     position: relative;
     height: 50%;
-    width: 50%;
     margin-bottom: 20px;
+    left: 20px;
   }
   span.myTitle {
     float: right;

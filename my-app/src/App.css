@@ -36,7 +36,7 @@ Image {
   z-index: 10;
 }
 
-span {
+.myTitle {
   position: relative;
   bottom: 40px;
   left: 50px;
@@ -83,6 +83,9 @@ span {
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+}
+.webLink {
+  color: yellow;
 }
 
 .App-link {

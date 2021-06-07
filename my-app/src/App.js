@@ -21,7 +21,7 @@ class App extends Component {
           <Col>
             <div class='myText'>
              
-              <Mynav/> <span>React Project</span>
+              <Mynav/> <span className='myTitle'>React Project</span>
           
             </div>
           </Col>
@@ -30,7 +30,7 @@ class App extends Component {
           <Col>
            
               <div class='myText' id='bodyText'> 
-                This is a variation of my portfolio using react-bootstrap and Framer Motion. It'll be better than my main portfolio at www.alexberg.app when it's finished. The intention is to show a variety of skills vs a large quantity of a few skills.
+                This is a variation of my portfolio using react-bootstrap and Framer Motion. It'll be better than my main portfolio at <span className='webLink'>www.alexberg.app</span> when it's finished. The intention is to show a variety of skills vs a large quantity of a few skills.
               </div>
             
           </Col>

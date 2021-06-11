@@ -49,7 +49,7 @@ class App extends Component {
           <Col>
            
               <div class='myText' id='bodyText'> 
-                This is a variation of my portfolio using react-bootstrap, Framer Motion, and Figma. The intention is to show a variety of skills vs a large quantity of a few skills.
+                This is a variation of my portfolio using react-bootstrap, Framer Motion, and Figma. The intention is to show a variety of skills vs a large quantity of a few skills. 
               </div>
                 
             
@@ -64,7 +64,7 @@ class App extends Component {
               {/*<myPDF/>*/}
 
   
-              <FigmaEmbed style={{opacity: '60%', position: 'relative', left: '5vw', top: '-40vh', width: '500px', height:'600px'}} url="https://www.figma.com/proto/jqnpF0KXQR3tshwO7qv4Zf/aceUpSleeve?page-id=0%3A1&node-id=119%3A127&viewport=16%2C455%2C0.5&scaling=scale-down" />
+              <FigmaEmbed className='figma' style={{opacity: '60%', position: 'relative', left: '5vw', top: '-40vh', width: '500px', height:'600px'}} url="https://www.figma.com/proto/jqnpF0KXQR3tshwO7qv4Zf/aceUpSleeve?page-id=0%3A1&node-id=119%3A127&viewport=16%2C455%2C0.5&scaling=scale-down" />
               
             </Col>
           

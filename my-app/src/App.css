@@ -1,3 +1,9 @@
+@media only screen and (max-width: 750px) {
+  .figma {
+    display: none;
+  }
+}  
+
 @media only screen and (max-width: 500px) {
   div#bodyText.myText {
     top: 20vh;
@@ -94,7 +100,6 @@ img.rounded-circle {
 #nav {
   background-color: navy;
 }
-
 
 div.progress {
   right: 30px;

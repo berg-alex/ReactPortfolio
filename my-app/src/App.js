@@ -28,7 +28,8 @@ class App extends Component {
           <Col>
             <div class='myText'>
              
-              <Mynav/> <span className='myTitle'>React Project</span><p style={{color: 'white', float:'right', position: 'relative', top: '-5vh', left: '-5vw'}}>Email: abergsf2017@gmail.com</p>
+              <Mynav/> <span className='myTitle'>React Project</span>
+              <p className='myEmail' style={{color: 'white', float:'right', position: 'relative', top: '-5vh', left: '-5vw'}}>Email: abergsf2017@gmail.com</p>
               <a className='Linkedin' href='https://www.linkedin.com/in/alex-b-6676551b7/'>
                 <lottie-player id='linkedinAnimation'
                   autoplay
@@ -37,7 +38,7 @@ class App extends Component {
                   src="https://assets9.lottiefiles.com/packages/lf20_pWLTA9.json"
                 ></lottie-player>
               </a>
-              <p style={{color: 'white', float: 'left', position: 'relative', left: '2vw'}}>(Preferred contact)</p>
+              <p className='preferredContact' style={{color: 'white', float: 'left', position: 'relative', left: '2vw'}}>(Preferred contact)</p>
                 
 
               

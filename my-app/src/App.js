@@ -68,7 +68,7 @@ class App extends Component {
               
             </Col>
           
-          <Col style={{textAlign: 'center', color: 'white', top: '20vh'}}>
+          <Col style={{textAlign: 'center', color: 'white', top: '20vh', left: '5vw'}}>
             <div className='skillsList'>  
             <p>React.js</p>
             <p>Web Design</p>
@@ -79,14 +79,17 @@ class App extends Component {
             </div>
           </Col>
 
-          <Col>
+          <Col style={{position: 'relative', left: '10vw'}}>
             <MyProgressBar/>
+          </Col>
+          <Col>
+            <a download href="AlexBergResumePDF.pdf" style={{position: 'relative', left: '-5vw'}}>
+              Download Resume
+            </a>
           </Col>
         </Row>
         <Row>
-          <Col>
-
-          </Col>
+          
         </Row>
       </Container>
     );

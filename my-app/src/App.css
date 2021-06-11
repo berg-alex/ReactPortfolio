@@ -178,6 +178,17 @@ div.progress {
     transform: rotate(360deg);
   }
 }
+/*a[download] {
+  background-color: transparent;
+  border-bottom: 1px solid transparentize($color-green-light, $transparancy-slight);
+  box-shadow: inset 0 -0.4rem 0 transparentize($color-green-light, $transparancy-slight);
+  color: color-green-light;
+  font-size: 1.25em;
+  font-weight: 500;
+  letter-spacing: 0.025em;
+  text-decoration: none;
+  transition: box-shadow ease-in-out $transition-fast; 
+}*/
 
 div.col {
  width:100%;max-width:none ;padding-left:0;padding-right:0 ! important; 

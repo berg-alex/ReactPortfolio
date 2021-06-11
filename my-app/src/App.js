@@ -11,6 +11,12 @@ import * as LottiePlayer from "@lottiefiles/lottie-player";
 import './App.css';
 import './me.jpg';
 // import {index} from './index';
+// import myPDF from './components/downloadPDF';
+import Iframe from 'react-iframe';
+import FigmaEmbed from 'react-figma-embed';
+
+
+
 
 
  
@@ -24,7 +30,7 @@ class App extends Component {
              
               <Mynav/> <span className='myTitle'>React Project</span>
               <a className='Linkedin' href='https://www.linkedin.com/in/alex-b-6676551b7/'>
-                <lottie-player
+                <lottie-player id='linkedinAnimation'
                   autoplay
                   loop
                   mode="normal"
@@ -39,9 +45,9 @@ class App extends Component {
           <Col>
            
               <div class='myText' id='bodyText'> 
-                This is a variation of my portfolio using react-bootstrap and Framer Motion. It'll be better than my main portfolio at <span className='webLink'>www.alexberg.app</span> when it's finished. The intention is to show a variety of skills vs a large quantity of a few skills.
+                This is a variation of my portfolio using react-bootstrap, Framer Motion, and Figma. The intention is to show a variety of skills vs a large quantity of a few skills.
               </div>
-              
+                
             
           </Col>
           
@@ -51,6 +57,11 @@ class App extends Component {
             animate = {{rotateY:360}}
       
             ><Image src="https://i.ibb.co/vBcmkM0/me.jpg" roundedCircle z-index='10'/></motion.div> 
+              {/*<myPDF/>*/}
+
+  
+              <FigmaEmbed style={{opacity: '60%', position: 'relative', left: '5vw', top: '-40vh', width: '500px', height:'600px'}} url="https://www.figma.com/proto/jqnpF0KXQR3tshwO7qv4Zf/aceUpSleeve?page-id=0%3A1&node-id=119%3A127&viewport=16%2C455%2C0.5&scaling=scale-down" />
+              
             </Col>
           
           <Col style={{textAlign: 'center', color: 'white', top: '20vh'}}>
@@ -66,6 +77,11 @@ class App extends Component {
 
           <Col>
             <MyProgressBar/>
+          </Col>
+        </Row>
+        <Row>
+          <Col>
+
           </Col>
         </Row>
       </Container>

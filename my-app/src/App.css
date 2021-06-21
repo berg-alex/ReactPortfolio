@@ -93,10 +93,10 @@ div.progress {
 .myTitle {
   position: relative;
   background-color: transparent;
-  font-size: 25px;
+  font-size: 15px;
   float: right;
   right: 20px;
-  top: -5px;
+  top: 5px;
 }
 
 .navText {
@@ -163,7 +163,6 @@ div.row6-col1.col {
   background-color: black;
   width: 100vw;
   height: 100vh;
-  position: fixed;
 }
 
 .App-logo {

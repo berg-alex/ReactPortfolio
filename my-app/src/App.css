@@ -1,180 +1,147 @@
-@media only screen and (max-width: 750px) {
-  .figma {
-    display: none;
-  }
-  .myEmail {
-    display: none;
-  }
-  .preferredContact {
-    top: 2vh;
-  }
-  
-}  
-
-@media only screen and (max-width: 500px) {
-  div#bodyText.myText {
-    top: 20vh;
-    font-size: 70%;
-  }
-  div.main-center {
-    top: 0;
-    left: 25vw;
-  }
-  div.skillsList {
-    position: relative;
-    top: 15vh;
-    right: 10vw;
-    font-size: 50%;
-  }
-  div.allProgressBars {
-    position: relative;
-    height: 50%;
-    margin-bottom: 20px;
-    left: 20px;
-  }
-  span.myTitle {
-    float: right;
-    left: -20px;
-    font-size: 75%;
-  }
-
-}
-
-@media only screen and (max-height: 500px) {
-  
-  img.rounded-circle {
-    position: relative;
-    top: -20vh;
-    max-height: 100px;
-    max-width: 75px;
-  }
-
-  div#bodyText.myText {
-    position: relative;
-    top: -20vh;
-    font-size: 80%;
-  }
-
-  div.skillsList {
-    position: relative;
-    top: -40vh;
-    font-size: 60%;
-  }
-  .Linkedin {
-    position: relative;
-    top: -5vh;
-    left: 20vw;
-  }
-  
-}
+/* all devices */
 
 html {
   height: 100vh;
   width: 100vw;
 }
 
-body {
+div.container-fluid {
   height: 100vh;
-  width: 100vw;
 }
 
+div.col {
+ padding-left:0;padding-right:0 ! important; 
+}
+
+/* Linkedin */
 #linkedinAnimation {
   width: 50px;
   height: 50px;
   position: relative;
+  left: 15vw;
+}
+
+.preferredContact {
+  position: relative;
+  float: left;
   left: 5vw;
+  color: white;
+  width: 150%;
 }
 
-#bgAnimation {
-  height: 300px;
-  width: 300px;
+/* Figma hide */
+.row3-col1 {
+  display: none;
 }
 
-#root {
-  background-color: black;
+/* Figma */
+
+iframe {
+  position: relative;
+  left: 20vw;
+  z-index: 20; 
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  height: 600px;
+  top: -20vh;
+
+}
+
+/* nav */
+
+nav {
   width: 100vw;
-  height: 100vh;
-  position: fixed;
-}
-
-img.rounded-circle {
-  border: white solid 2px;
-  /*opacity: 60%;*/
-  height: 150px;
-  width: 100px;
-}
-
-#nav {
   background-color: navy;
 }
 
+.row3-col2 {
+  text-align: center;
+}
+
+
+.myEmail {
+  display: none;
+  position: relative;
+  float: right;
+  bottom: 5vh;
+  color: white;
+}
+
+.downloadLink {
+  color: yellow;
+  position: relative;
+  top: -5vh;
+}
+
+.myImage {
+  height: 30vh;
+  position: relative;
+  text-align: center;
+  float: right;
+  left: 15vw;
+  z-index: 10;
+}
+
 div.progress {
-  right: 30px;
   z-index: 10;
   position: relative;
-  margin-left: 10px;
-  top: 20vh;
+  margin-left: 5vw;
+  width: 100%;
+  right: 10vw;
 
 }
 
 .myTitle {
   position: relative;
-  bottom: 40px;
-  left: 50px;
   background-color: transparent;
   font-size: 25px;
+  float: right;
+  right: 20px;
+  top: -5px;
 }
 
-.myText {
+.navText {
   text-align: center;
   color: white;
+  position: relative;
+  top: -5vh;
+  width: 100vw;
   font-family: Odibee Sans;
 }
 
-#bodyText {
+div.row6-col1.col {
+  text-align: center;
+  display: inline-block;
+}
+
+.bodyText {
   position: relative;
-  top: 20vh;
   z-index: 10;
-  left: 30px;
+  top: 10vh;
+  width: 70%;
+  color: white;
+  left: 15vw;
   
 }
 
+.row6 {
+  position: relative;
+  top: -10vh;
+}
 
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-#nav {
-  background-color: navy;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
 .webLink {
   color: yellow;
 }
 
 .App-link {
   color: #61dafb;
+}
+
+#nav {
+  background-color: navy;
 }
 
 @keyframes App-logo-spin {
@@ -186,20 +153,365 @@ div.progress {
   }
 }
 
-
-div.col {
- width:100%;max-width:none ;padding-left:0;padding-right:0 ! important; 
-}
-div.row {
-  width: 100vw; 
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
 }
 
-.main-center {
-  height: 30vh;
+#root {
+  background-color: black;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+img.rounded-circle {
+  border: white solid 2px;
+  /*opacity: 60%;*/
+  height: 150px;
+  width: 100px;
   position: relative;
-  top: 20vh;
-  text-align: center;
-  float: right;
-  /*background-image: url(https://media-exp1.licdn.com/dms/image/C4D03AQHHtCg96ikUyQ/profile-displayphoto-shrink_800_800/0/1619643609555?e=1628121600&v=beta&t=-qb9KNccXWh73P9ExxqvGj1NVjDyOxL6azHqbJym4cU);*/
-  /*background-size: 100px 150px contain;*/
+  
 }
+
+div.skillsList {
+  color:  white;
+  position: relative;
+  margin-left: 5vw;
+}
+
+.otherSkills {
+  left: 15vw;
+  color: yellow;
+}
+
+/* Landscape phones */
+
+@media (min-width: 667px) and (max-width: 850px) and (max-height: 450px) and (orientation: landscape) { 
+
+  a.downloadLink {
+    font-size: 15px;
+    top: 5vh;
+    left: 15vw;
+  }
+
+  p.otherSkills {
+    position: relative;
+    font-size: 12px;
+    left: 0;
+  }
+
+  .myEmail {
+    display: block;
+    position: relative;
+    left: 10vw;
+    top: -5vh;
+
+  }
+
+  p.myTitle {
+    top: -6vh;
+    right: 40vw;
+  }
+
+  div.myImage {
+    position: relative;
+    top: -10vh;
+    left: 30vw;
+  }
+
+  #linkedinAnimation {
+    top: 45vh;
+    left: 60vw;
+    float: right;
+  }
+  .preferredContact {
+    top: 50vh;
+    left: 80vw;
+    
+  }
+
+  div.allProgressBars {
+    position: relative;
+    right: 30vw;
+    width: 25%;
+  }
+
+  .row3-col1 {
+    display: block;
+  }
+
+  iframe {
+    position: relative;
+    top: -40vh;
+    left: 10px;
+    height: 310px;
+  }
+
+  div.skillsList {
+    top: -110vh;
+    left: 40vw;
+  }
+
+
+
+}
+
+/* ----------- iPad Pro 12.9" ----------- */
+/* Tablet portrait */
+@media only screen 
+  and (min-device-width: 1024px) 
+  and (max-device-width: 1024px) 
+  and (orientation: portrait) 
+  and (-webkit-min-device-pixel-ratio: 2) { 
+
+  .row3-col1 {
+    display: block; 
+  }
+
+  .myEmail {
+    display: block;
+    left: 10vw;
+    top: 20px;
+    font-size: 30px;
+  }
+
+  .downloadLink {
+    top: 0vh;
+    float: left;
+    right: 40vw;
+    font-size: 3vh;
+  }
+
+  #linkedinAnimation {
+    left: 25vw;
+    top: 2vh;
+    height: 50%;
+    width: 50%;
+  }
+
+  .preferredContact {
+    left: 10vw;
+    top: 0vh;
+    font-size: 3vh;
+  }
+
+  .myTitle {
+    top: 20px;
+    left: -50vw;
+    font-size: 2vh;
+  }
+
+  div.row3.row {
+    position: relative;
+    height: 500px;
+  }
+
+  .row6-col1 {
+    position: relative;
+    bottom: 35vh;
+  }
+  iframe {
+    width: 100%;
+    height: 100%;
+    top: 20vh;
+    position: relative;
+    left: 5vw;
+  }
+
+  .otherSkills {
+    font-size: 25px;
+    width: 200%;
+    position: relative;
+    left: 0;
+  }
+
+  .bodyText {
+    position: relative;
+    top: 10vh;
+    left: 60vw;
+    width: 35%;
+    font-size: 30px;
+  }
+
+  .skillsList {
+    width: 50%;
+    float: right;
+    left: 25vw;
+    top: -50vh;
+    font-size: 3vh;
+  }
+  .allProgressBars {
+    position: relative;
+    top: 15px;
+    left: -25vw;
+    font-size: 3.3vh;
+  }
+
+}
+
+/* ----------- iPad Pro 12.9" ----------- */
+
+/* Landscape */
+@media only screen 
+  and (min-device-width: 1366px) 
+  and (max-device-width: 1366px) 
+  and (orientation: landscape) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+  .row3-col1 {
+    display: block; 
+    position: relative;
+    top: 10vh;
+  }
+
+  p.myTitle {
+    right: 50vw;
+    font-size: 30px;
+    top: 0;
+  }
+
+  p.myEmail {
+    display: block;
+    top: 0;
+    left: 5vw;
+    font-size: 30px;
+  }
+
+  p.bodyText {
+    top: -45vh;
+    font-size: 30px;
+  }
+
+  a.downloadLink {
+    font-size: 3vh;
+    position: relative;
+    left: 5vw;
+    top: -5vh;
+  }
+
+  div.myImage {
+    position: relative;
+    left: 25vw;
+  }
+
+  #linkedinAnimation {
+    left: 20vw;
+    top: 5vh;
+  }
+
+  .preferredContact {
+    left: 70vw;
+    top: 4vh;
+  }
+
+  div.skillsList {
+    width: 50%;
+    position: relative;
+    left: 50vw;
+    top: -55vh;
+    
+  }
+  .allProgressBars {
+    position: relative;
+    right: 20vw;
+  }
+
+  .otherSkills {
+    width: 150%;
+    position: relative;
+    left: 10vw;
+  }
+
+}
+
+/* laptop */
+
+@media screen 
+  and (min-device-width: 1200px) 
+  
+  { 
+
+
+    .myTitle {
+      right: 50vw;
+      font-size: 2vw;
+    }
+
+    .myImage {
+      left: 30vw;
+      
+    }
+
+    .downloadLink {
+      font-size: 3vh;
+      left: 5vw;
+      top: -5vh;
+    }
+
+    img.rounded-circle {
+      width: 50%;
+      height: 75%;
+    }
+
+    .row3-col1 {
+      display: block;
+    }
+
+    #linkedinAnimation {
+      height: 70%;
+      width: 70%;
+      left: 50vw;
+      top: 5vh;
+    }
+    .preferredContact {
+      position: relative;
+      top: 0vh;
+      left: 50vw;
+      font-size: 2vh;
+    }
+
+    iframe {
+      top: -30vh;
+      width: 75%;
+      left: 5vw;
+    }
+
+    .myEmail {
+      display: block;
+      left: 0;
+      top: 0;
+      font-size: 2vh;
+      
+    }
+
+    .skillsList {
+      position: relative;
+      left: 50vw;
+      top: -60vh;
+      font-size: 3vh;
+    }
+
+    .otherSkills {
+      position: relative;
+      left: 0;
+      font-size: 3vh;
+    }
+
+    .allProgressBars {
+      position: relative;
+      top: 10px;
+      width: 50%;
+      right: 25vw;
+      font-size: 3.2vh;
+    }
+
+
+}
+

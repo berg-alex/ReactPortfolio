@@ -13,17 +13,17 @@ class MyProgressBar extends Component {
             
             
       <div className='allProgressBars'>
-         <ProgressBar animated now={45} />
+         <ProgressBar animated now={70} />
          <br/>
          <ProgressBar animated now={70} />
          <br/>
          <ProgressBar animated now={60} />
          <br/>
-         <ProgressBar animated now={60} />
-         <br/>
-         <ProgressBar animated now={70} />
+         <ProgressBar animated now={55} />
          <br/>
          <ProgressBar animated now={60} />
+         <br/>
+         
   
       </div>
       </div>

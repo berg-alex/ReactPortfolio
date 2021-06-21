@@ -16,7 +16,14 @@ import Iframe from 'react-iframe';
 import FigmaEmbed from 'react-figma-embed';
 
 
+/*
+    row1 = nav
+    ***react bootstrap logo, react bootstrap text, email***
 
+
+    
+
+*/
 
 
  
@@ -24,12 +31,18 @@ class App extends Component {
   render() {
     return (
       <Container fluid>
-        <Row>
-          <Col>
-            <div class='myText'>
-             
-              <Mynav/> <span className='myTitle'>React Project</span>
-              <p className='myEmail' style={{color: 'white', float:'right', position: 'relative', top: '-5vh', left: '-5vw'}}>Email: abergsf2017@gmail.com</p>
+        <Row className='row1'>
+          <Mynav/>
+          <div className='navText'>
+            <p className='myTitle'>React Project</p>
+            <p className='myEmail'> Email: abergsf2017@gmail.com</p>   
+          </div>
+        </Row>
+         
+         <Row className='row2'> 
+          
+          <Col className='row2-col1'>
+            
               <a className='Linkedin' href='https://www.linkedin.com/in/alex-b-6676551b7/'>
                 <lottie-player id='linkedinAnimation'
                   autoplay
@@ -38,59 +51,69 @@ class App extends Component {
                   src="https://assets9.lottiefiles.com/packages/lf20_pWLTA9.json"
                 ></lottie-player>
               </a>
-              <p className='preferredContact' style={{color: 'white', float: 'left', position: 'relative', left: '2vw'}}>(Preferred contact)</p>
-                
+              <p className='preferredContact' >(Preferred contact)</p>
+            </Col>
+          
 
               
-            </div>
+            
+          <Col className='row2-col2'>
+            <motion.div class='myImage'
+                transition={{ originX:0, repeat:Infinity, repeatDelay: 1, duration:1 }}
+                animate = {{rotateY:360}}
+          
+                ><Image src="https://i.ibb.co/vBcmkM0/me.jpg" roundedCircle z-index='10'/>
+              </motion.div>
+          </Col>
+
+          <Col className='row2-col3'>
+            
           </Col>
         </Row>
 
-        <Row class='main'>
-          <Col>
+          
+        <Row className='row3'>
+          <Col className='row3-col1'>
            
-              <div class='myText' id='bodyText'> 
-                This is a variation of my portfolio using react-bootstrap, Framer Motion, and Figma. The intention is to show a variety of skills vs a large quantity of a few skills. 
-              </div>
-                
-            
+             <iframe src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FjqnpF0KXQR3tshwO7qv4Zf%2FaceUpSleeve%3Fpage-id%3D0%253A1%26node-id%3D119%253A99%26viewport%3D-95%252C495%252C0.5%26scaling%3Dscale-down" allowfullscreen></iframe>
+           
           </Col>
           
-            <Col>
-               <motion.div class='main-center'
-            transition={{ originX:0, repeat:Infinity, repeatDelay: 1, duration:1 }}
-            animate = {{rotateY:360}}
-      
-            ><Image src="https://i.ibb.co/vBcmkM0/me.jpg" roundedCircle z-index='10'/></motion.div> 
-              {/*<myPDF/>*/}
-
-  
-              <FigmaEmbed className='figma' style={{opacity: '60%', position: 'relative', left: '5vw', top: '-40vh', width: '500px', height:'600px'}} url="https://www.figma.com/proto/jqnpF0KXQR3tshwO7qv4Zf/aceUpSleeve?page-id=0%3A1&node-id=119%3A127&viewport=16%2C455%2C0.5&scaling=scale-down" />
-              
-            </Col>
-          
-          <Col style={{textAlign: 'center', color: 'white', top: '20vh', left: '5vw'}}>
-            <div className='skillsList'>  
-            <p>React.js</p>
-            <p>Web Design</p>
-            <p>Figma</p>
-            <p>Framer</p>
-            <p>Wireframing</p>
-            <p>Prototyping</p>
-            </div>
-          </Col>
-
-          <Col style={{position: 'relative', left: '10vw'}}>
-            <MyProgressBar/>
-          </Col>
-          <Col>
-            <a download href="AlexBergResumePDF.pdf" style={{position: 'relative', left: '-5vw'}}>
+          <Col className='row3-col2'>
+            <a className='downloadLink' download href="AlexBergResumePDF.pdf">
               Download Resume
             </a>
           </Col>
         </Row>
-        <Row>
-          
+        
+        <Row className='row4'>
+          <Col className='row4-col1'>
+            
+          </Col>
+        </Row>
+
+        <Row className='row5'>
+          <Col className='row5-col1'>
+            <div className='skillsList'>  
+              <p>HTML</p>
+              <p>CSS</p>
+              <p>Javasript</p>
+              <p>React.js</p>
+              <p>Figma</p>
+              <p className='otherSkills'>Other skills listed on Linkedin profile</p>
+            </div>
+          </Col>
+          <Col className='row5-col2'>
+            <MyProgressBar/>
+          </Col>
+        </Row>
+
+        <Row className='row6'>
+          <Col className='row6-col1'>
+            <p class='bodyText'> 
+                This is a variation of my portfolio using react-bootstrap, Framer Motion, and Figma. The intention is to show a variety of skills vs a large quantity of a few skills. 
+            </p>
+          </Col>
         </Row>
       </Container>
     );

@@ -202,7 +202,7 @@ div.skillsList {
 
 /* Landscape phones */
 
-@media (min-width: 667px) and (max-height: 450px) and (orientation: landscape){ 
+@media (min-width: 667px) and (max-device-width: 1023px) and (max-height: 450px) and (orientation: landscape){ 
 
   .myEmail {
     display: block;
@@ -278,7 +278,7 @@ div.skillsList {
 
 }
 
-@media (min-width: 768px) and (max-width: 1199px) and (orientation: portrait or orientatioin: landscape) { 
+/*@media (min-width: 768px) and (max-width: 1199px) and (orientation: portrait or orientatioin: landscape) { 
 
    .myEmail {
     display: block;
@@ -355,7 +355,7 @@ div.skillsList {
     height: 50%;
   }
 
-}
+}*/
 
 
 /* Portrait ipad */
@@ -465,7 +465,7 @@ div.skillsList {
 /* Landscape ipad */
 
 @media only screen 
-  and (min-device-width: 768px) 
+  and (min-device-width: 1024px) 
   and (max-device-width: 1024px) 
   and (orientation: landscape) 
   and (-webkit-min-device-pixel-ratio: 1) {

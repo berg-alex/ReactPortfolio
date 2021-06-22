@@ -1,26 +1,21 @@
 /* all devices */
 
 html {
-  height: 100vh;
-  width: 100vw;
   background-color: black;
 }
 
 #root {
   background-color: black;
-}
-
-div.container-fluid {
-  height: 100vh;
+  overflow-x: hidden;
 }
 
 li {
   list-style-type: none;
 }
 
-div.col {
+/*div.col {
  padding-left:0;padding-right:0 ! important; 
-}
+}*/
 
 /* Linkedin */
 #linkedinAnimation {
@@ -112,7 +107,7 @@ div.progress {
 .myTitle {
   position: relative;
   background-color: transparent;
-  font-size: 25px;
+  font-size: 15px;
   top: 6vh;
   float: left;
 }

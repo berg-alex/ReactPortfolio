@@ -7,18 +7,22 @@ class Mynav extends Component {
   render() {
     return (
       <div>
-         <Navbar id='nav' bg="" variant="dark">
-    <Navbar.Brand href="#home">
-      <img
-        alt=""
-        src="https://i.ibb.co/cJBdQmk/React-Bootstrap-Logo.jpg"
-        width="30"
-        height="30"
-        className="d-inline-block align-top"
-      />{' '}
-      React Bootstrap
-    </Navbar.Brand>
-  </Navbar>
+        <Navbar id='nav' bg="" variant="dark">
+          <Navbar.Brand href="#home">
+            <img
+              alt=""
+              src="https://i.ibb.co/cJBdQmk/React-Bootstrap-Logo.jpg"
+              width="30"
+              height="30"
+              className="d-inline-block align-top"
+            />{' '}
+            React Bootstrap
+          </Navbar.Brand>
+          <ul className='navText'>
+            <li className='myTitle'>React Project</li>
+            <li className='myEmail'> Email: abergsf2017@gmail.com</li>
+          </ul>
+        </Navbar>
       </div>
     );
   }

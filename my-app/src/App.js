@@ -31,41 +31,40 @@ class App extends Component {
   render() {
     return (
       <Container fluid>
+      {/* Row ONE */}
         <Row className='row1'>
           <Mynav/>
-          <div className='navText'>
-            <p className='myTitle'>React Project</p>
-            <p className='myEmail'> Email: abergsf2017@gmail.com</p>   
-          </div>
         </Row>
          
-         <Row className='row2'> 
-          
+         {/* Row TWO */}
+        <Row className='row2'> 
+          {/* Row 2 Col 1 mobile portrait */}
           <Col className='row2-col1'>
-            
-              <a className='Linkedin' href='https://www.linkedin.com/in/alex-b-6676551b7/'>
-                <lottie-player id='linkedinAnimation'
-                  autoplay
-                  loop
-                  mode="normal"
-                  src="https://assets9.lottiefiles.com/packages/lf20_pWLTA9.json"
-                ></lottie-player>
-              </a>
-              <p className='preferredContact' >(Preferred contact)</p>
-            </Col>
+            <a className='Linkedin' href='https://www.linkedin.com/in/alex-b-6676551b7/'>
+              <lottie-player id='linkedinAnimation'
+                autoplay
+                loop
+                mode="normal"
+                src="https://assets9.lottiefiles.com/packages/lf20_pWLTA9.json"
+              ></lottie-player>
+            </a>
+            <p className='preferredContact' >(Preferred contact)</p>
+          </Col>
           
 
-              
-            
+          {/* Row 2 Col 2 mobile portrait */}
+          
           <Col className='row2-col2'>
             <motion.div class='myImage'
-                transition={{ originX:0, repeat:Infinity, repeatDelay: 1, duration:1 }}
-                animate = {{rotateY:360}}
-          
-                ><Image src="https://i.ibb.co/vBcmkM0/me.jpg" roundedCircle z-index='10'/>
-              </motion.div>
+              transition={{ originX:0, repeat:Infinity, repeatDelay: 1, duration:1 }}
+              animate = {{rotateY:360}}
+        
+              ><Image src="https://i.ibb.co/vBcmkM0/me.jpg" roundedCircle z-index='10'/>
+            </motion.div>
           </Col>
 
+
+          {/* Row 2 Col 3 mobile portrait */}
           <Col className='row2-col3'>
             
           </Col>
@@ -75,7 +74,7 @@ class App extends Component {
         <Row className='row3'>
           <Col className='row3-col1'>
            
-             <iframe src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FjqnpF0KXQR3tshwO7qv4Zf%2FaceUpSleeve%3Fpage-id%3D0%253A1%26node-id%3D119%253A99%26viewport%3D-95%252C495%252C0.5%26scaling%3Dscale-down" allowfullscreen></iframe>
+            <iframe src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FjqnpF0KXQR3tshwO7qv4Zf%2FaceUpSleeve%3Fpage-id%3D0%253A1%26node-id%3D119%253A99%26viewport%3D-95%252C495%252C0.5%26scaling%3Dscale-down" allowfullscreen></iframe>
            
           </Col>
           

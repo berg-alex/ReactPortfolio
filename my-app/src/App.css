@@ -6,8 +6,16 @@ html {
   background-color: black;
 }
 
+#root {
+  background-color: black;
+}
+
 div.container-fluid {
   height: 100vh;
+}
+
+li {
+  list-style-type: none;
 }
 
 div.col {
@@ -19,15 +27,18 @@ div.col {
   width: 50px;
   height: 50px;
   position: relative;
-  left: 15vw;
+  float: right;
+  top: 5vh;
+  z-index: 100;
 }
 
 .preferredContact {
   position: relative;
-  float: left;
-  left: 5vw;
   color: white;
+  float: right;
+  left: 15vw;
   width: 150%;
+  top: 5vh;
 }
 
 /* Figma hide */
@@ -50,27 +61,33 @@ iframe {
 /* nav */
 
 nav {
-  width: 100vw;
   background-color: navy;
 }
 
-.row3-col2 {
+.row3-col2.col {
   text-align: center;
+}
+
+.row2-col1 {
+  text-align: center;
+  width: 100vw;
 }
 
 
 .myEmail {
   display: none;
   position: relative;
-  float: right;
-  bottom: 5vh;
+  top: 5vh;
+  right: 10vw;
   color: white;
+  float: right;
 }
 
 .downloadLink {
   color: yellow;
   position: relative;
   top: -5vh;
+  z-index: 100;
 }
 
 .myImage {
@@ -78,7 +95,8 @@ nav {
   position: relative;
   text-align: center;
   float: right;
-  left: 15vw;
+  top: 5vh;
+  left: 30vw;
   z-index: 10;
 }
 
@@ -94,10 +112,9 @@ div.progress {
 .myTitle {
   position: relative;
   background-color: transparent;
-  font-size: 15px;
-  float: right;
-  right: 20px;
-  top: 5px;
+  font-size: 25px;
+  top: 6vh;
+  float: left;
 }
 
 .navText {
@@ -141,10 +158,6 @@ div.row6-col1.col {
   color: #61dafb;
 }
 
-#nav {
-  background-color: navy;
-}
-
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -158,12 +171,6 @@ div.row6-col1.col {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
-}
-
-#root {
-  background-color: black;
-  width: 100vw;
-  height: 100vh;
 }
 
 .App-logo {
@@ -187,60 +194,54 @@ div.skillsList {
 }
 
 .otherSkills {
-  left: 15vw;
+  position: relative;
+  left: 20vw;
   color: yellow;
+  text-align: center;
 }
 
 /* Landscape phones */
 
-@media (min-width: 667px) and (max-width: 850px) and (max-height: 450px) and (orientation: landscape) { 
-
-  a.downloadLink {
-    font-size: 15px;
-    top: 5vh;
-    left: 15vw;
-  }
-
-  p.otherSkills {
-    position: relative;
-    font-size: 12px;
-    left: 0;
-  }
+@media (min-width: 667px) and (max-height: 450px) and (orientation: landscape){ 
 
   .myEmail {
     display: block;
-    position: relative;
-    left: 10vw;
-    top: -5vh;
-
+    float: left;
+    top: 9vh;
+    left: 5vw;
+    font-size: 12px;
   }
 
-  p.myTitle {
-    top: -6vh;
-    right: 40vw;
-  }
-
-  div.myImage {
-    position: relative;
-    top: -10vh;
-    left: 30vw;
+  .downloadLink {
+    top: -30vh;
+    float: left;
+    right: 10vw;
   }
 
   #linkedinAnimation {
-    top: 45vh;
-    left: 60vw;
-    float: right;
-  }
-  .preferredContact {
-    top: 50vh;
-    left: 80vw;
-    
+    top: 30vh;
+    left: 40vw;
   }
 
-  div.allProgressBars {
-    position: relative;
-    right: 30vw;
+  .preferredContact {
+    left: 61vw;
+    top: 30vh;
+    color: yellow;
+  }
+
+  .skillsList {
     width: 25%;
+    top: -60vh;
+    font-size: 50%;
+    float: right;
+  }
+
+  .bodyText {
+    position: relative;
+    font-size: 10px;
+    width: 50%;
+    top: -55vh;
+    left: 30vw;
   }
 
   .row3-col1 {
@@ -249,62 +250,166 @@ div.skillsList {
 
   iframe {
     position: relative;
-    top: -40vh;
-    left: 10px;
-    height: 310px;
+    top: -25vh;
+    left: 5vw;
+    z-index: 10;
+    width: 50%;
+    height: 150%;
   }
 
-  div.skillsList {
-    top: -110vh;
-    left: 40vw;
+  .otherSkills {
+    left: 5vw;
+    top: -2vh;
   }
 
+  .allProgressBars {
+    position: relative;
+    right: 35vw;
+  }
 
+  .myImage {
+    left: 20vw;
+  }
+
+  img.rounded-circle {
+    width: 25%;
+    height: 75%;
+  }
 
 }
 
-/* ----------- iPad Pro 12.9" ----------- */
-/* Tablet portrait */
+@media (min-width: 768px) and (max-width: 1199px) and (orientation: portrait or orientatioin: landscape) { 
+
+   .myEmail {
+    display: block;
+    float: left;
+    top: 7vh;
+    left: 10vw;
+    font-size: 100%;
+  }
+
+  .downloadLink {
+    top: -5vh;
+    float: left;
+    left: 10vw;
+    font-size: 150%;
+  }
+
+  #linkedinAnimation {
+    top: 30vh;
+    left: 45vw;
+  }
+
+  .preferredContact {
+    left: 65vw;
+    top: 30vh;
+    color: yellow;
+  }
+
+  .skillsList {
+    width: 25%;
+    top: 0vh;
+    font-size: 100%;
+    float: right;
+    left: 20vw;
+  }
+
+  .bodyText {
+    position: relative;
+    font-size: 12px;
+    width: 50%;
+    top: 10vh;
+    left: 45vw;
+  }
+
+  .row3-col1 {
+    display: block;
+  }
+
+  iframe {
+    position: relative;
+    top: -25vh;
+    left: 5vw;
+    z-index: 10;
+    width: 75%;
+    height: 450%;
+  }
+
+  .otherSkills {
+    left: 5vw;
+    top: 0vh;
+    width: 150%;
+  }
+
+  .allProgressBars {
+    position: relative;
+    right: 35vw;
+  }
+
+  .myImage {
+    left: 25vw;
+  }
+
+  img.rounded-circle {
+    width: 25%;
+    height: 50%;
+  }
+
+}
+
+
+/* Portrait ipad */
 @media only screen 
-  and (min-device-width: 1024px) 
+  and (min-device-width: 768px) 
   and (max-device-width: 1024px) 
   and (orientation: portrait) 
-  and (-webkit-min-device-pixel-ratio: 2) { 
+  and (-webkit-min-device-pixel-ratio: 1) {
+
+
 
   .row3-col1 {
     display: block; 
   }
 
-  .myEmail {
+  li.myEmail {
     display: block;
-    left: 10vw;
-    top: 20px;
-    font-size: 30px;
+    position: relative;
+    float: left;
+    left: 15vw;
+    top: 6vh;
+    z-index: 100;
+    font-size: 20px;
   }
 
   .downloadLink {
-    top: 0vh;
-    float: left;
-    right: 40vw;
+    top: 0;
+    float: right;
+    right: 10vw;
     font-size: 3vh;
+  }
+
+  .myImage {
+    left: 20vw;
+    top: 5vh;
   }
 
   #linkedinAnimation {
     left: 25vw;
-    top: 2vh;
+    top: 5vh;
     height: 50%;
     width: 50%;
   }
 
   .preferredContact {
-    left: 10vw;
-    top: 0vh;
-    font-size: 3vh;
+    left: 45vw;
+    top: 0;
+    font-size: 100%;
   }
 
   .myTitle {
-    top: 20px;
-    left: -50vw;
+    top: 5.5vh;
+    float: left;
+    left: 5vw;
     font-size: 2vh;
   }
 
@@ -318,25 +423,215 @@ div.skillsList {
     bottom: 35vh;
   }
   iframe {
-    width: 100%;
+    width: 75%;
     height: 100%;
-    top: 20vh;
+    top: -20vh;
     position: relative;
     left: 5vw;
   }
 
   .otherSkills {
     font-size: 25px;
-    width: 200%;
+    width: 100%;
     position: relative;
-    left: 0;
+    left: 5vw;
+  }
+
+  .bodyText {
+    position: relative;
+    top: 5vh;
+    left: 10vw;
+    width: 75%;
+    font-size: 20px;
+  }
+
+  .skillsList {
+    width: 75%;
+    float: right;
+    left: 40vw;
+    top: -40vh;
+    font-size: 2vh;
+  }
+  .allProgressBars {
+    position: relative;
+    width: 50%;
+    top: 15px;
+    left: -25vw;
+    font-size: 2vh;
+  }
+
+}  
+
+/* Landscape ipad */
+
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (orientation: landscape) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+
+    .row3-col1 {
+    display: block; 
+    position: relative;
+    top: -10vh;
+    left: -15vw;
+  }
+
+  .myTitle {
+    right: -10vw;
+    font-size: 30px;
+    top: 6vh;
+  }
+
+
+  .myEmail {
+    display: block;
+    top: 7vh;
+    float: left;
+    left: 15vw;
+    font-size: 20px;
+  }
+
+  p.bodyText {
+    position: relative;
+    top: -65vh;
+    left: 35vw;
+    font-size: 15px;
+    width: 50%;
+  }
+
+  .downloadLink {
+    font-size: 3vh;
+    position: relative;
+    left: -20vw;
+    top: -5vh;
+  }
+
+  div.myImage {
+    position: relative;
+    left: 10vw;
+  }
+
+  #linkedinAnimation {
+    left: 20vw;
+    top: 10vh;
+  }
+
+  .preferredContact {
+    left: 45vw;
+    top: 10vh;
+  }
+
+  div.skillsList {
+    width: 50%;
+    position: relative;
+    left: 45vw;
+    top: -75vh;
+    
+  }
+  .allProgressBars {
+    position: relative;
+    right: 30vw;
+    width: 50%;
+  }
+
+  p.otherSkills {
+    width: 150%;
+    position: relative;
+    left: -5vw;
+    font-size: 100%;
+  }
+
+
+}
+
+
+
+/* ----------- iPad Pro 12.9" ----------- */
+/* Tablet portrait */
+
+
+@media only screen 
+  and (min-device-width: 1024px) 
+  and (max-device-width: 1024px) 
+  and (orientation: portrait) 
+  and (-webkit-min-device-pixel-ratio: 2) { 
+
+  .row3-col1 {
+    display: block; 
+  }
+
+  li.myEmail {
+    display: block;
+    position: relative;
+    float: left;
+    left: 15vw;
+    top: 6vh;
+    z-index: 100;
+    font-size: 20px;
+  }
+
+  .downloadLink {
+    top: -10vh;
+    float: right;
+    right: 20vw;
+    font-size: 3vh;
+  }
+
+  .myImage {
+    left: 10vw;
+    top: 2vh;
+  }
+
+  #linkedinAnimation {
+    left: 25vw;
+    top: 2vh;
+    height: 50%;
+    width: 50%;
+  }
+
+  .preferredContact {
+    left: 45vw;
+    top: -5vh;
+    font-size: 100%;
+  }
+
+  .myTitle {
+    top: 5.5vh;
+    float: left;
+    left: 5vw;
+    font-size: 2vh;
+  }
+
+  div.row3.row {
+    position: relative;
+    height: 500px;
+  }
+
+  .row6-col1 {
+    position: relative;
+    bottom: 35vh;
+  }
+  iframe {
+    width: 75%;
+    height: 100%;
+    top: -20vh;
+    position: relative;
+    left: 5vw;
+  }
+
+  .otherSkills {
+    font-size: 25px;
+    width: 100%;
+    position: relative;
+    left: 5vw;
   }
 
   .bodyText {
     position: relative;
     top: 10vh;
-    left: 60vw;
-    width: 35%;
+    left: 20vw;
+    width: 50%;
     font-size: 30px;
   }
 
@@ -344,21 +639,25 @@ div.skillsList {
     width: 50%;
     float: right;
     left: 25vw;
-    top: -50vh;
-    font-size: 3vh;
+    top: -40vh;
+    font-size: 2vh;
   }
   .allProgressBars {
     position: relative;
+    width: 50%;
     top: 15px;
     left: -25vw;
-    font-size: 3.3vh;
+    font-size: 2vh;
   }
 
 }
 
+
 /* ----------- iPad Pro 12.9" ----------- */
 
 /* Landscape */
+
+
 @media only screen 
   and (min-device-width: 1366px) 
   and (max-device-width: 1366px) 
@@ -369,6 +668,7 @@ div.skillsList {
     display: block; 
     position: relative;
     top: 10vh;
+    left: -5vw;
   }
 
   p.myTitle {
@@ -376,6 +676,7 @@ div.skillsList {
     font-size: 30px;
     top: 0;
   }
+
 
   p.myEmail {
     display: block;
@@ -385,7 +686,7 @@ div.skillsList {
   }
 
   p.bodyText {
-    top: -45vh;
+    top: 5vh;
     font-size: 30px;
   }
 
@@ -393,7 +694,7 @@ div.skillsList {
     font-size: 3vh;
     position: relative;
     left: 5vw;
-    top: -5vh;
+    top: 0;
   }
 
   div.myImage {
@@ -414,8 +715,8 @@ div.skillsList {
   div.skillsList {
     width: 50%;
     position: relative;
-    left: 50vw;
-    top: -55vh;
+    left: 60vw;
+    top: -5vh;
     
   }
   .allProgressBars {
@@ -423,36 +724,45 @@ div.skillsList {
     right: 20vw;
   }
 
-  .otherSkills {
+  p.otherSkills {
     width: 150%;
     position: relative;
-    left: 10vw;
+    left: -10vw;
+    font-size: 100%;
   }
 
 }
 
+
 /* laptop */
+
 
 @media screen 
   and (min-device-width: 1200px) 
   
-  { 
-
+  {
 
     .myTitle {
-      right: 50vw;
+      right: 65vw;
       font-size: 2vw;
     }
 
     .myImage {
       left: 30vw;
-      
+    }
+
+    .bodyText {
+      position: relative;
+      top: 0;
+      left: 25vw;
+      font-size: 150%;
+      width: 50%;
     }
 
     .downloadLink {
       font-size: 3vh;
-      left: 5vw;
-      top: -5vh;
+      left: -15vw;
+      top: 0vh;
     }
 
     img.rounded-circle {
@@ -467,7 +777,7 @@ div.skillsList {
     #linkedinAnimation {
       height: 70%;
       width: 70%;
-      left: 50vw;
+      left: 35vw;
       top: 5vh;
     }
     .preferredContact {
@@ -480,7 +790,8 @@ div.skillsList {
     iframe {
       top: -30vh;
       width: 75%;
-      left: 5vw;
+      height: 350%;
+      left: 10vw;
     }
 
     .myEmail {
@@ -493,23 +804,34 @@ div.skillsList {
 
     .skillsList {
       position: relative;
-      left: 50vw;
-      top: -60vh;
-      font-size: 3vh;
+      left: 55vw;
+      top: -10vh;
+      font-size: 2vh;
+    }
+
+    .myTitle {
+      position: relative;
+      float: right;
+    }
+
+    .myEmail {
+      top: 7vh;
+      left: -15vw;
     }
 
     .otherSkills {
       position: relative;
-      left: 0;
+      left: -10vw;
       font-size: 3vh;
+      width: 75%;
     }
 
     .allProgressBars {
       position: relative;
       top: 10px;
-      width: 50%;
-      right: 25vw;
-      font-size: 3.2vh;
+      width: 30%;
+      right: 35vw;
+      font-size: 2vh;
     }
 
 

@@ -213,39 +213,39 @@ div.skillsList {
   }
 
   .downloadLink {
-    top: -30vh;
-    float: left;
-    right: 10vw;
+    top: 25vh;
+    right: 32vw;
   }
 
   #linkedinAnimation {
     top: 30vh;
-    left: 40vw;
+    left: -10vw;
   }
 
   .preferredContact {
-    left: 61vw;
+    left: 10vw;
     top: 30vh;
     color: yellow;
   }
 
   .skillsList {
     width: 25%;
-    top: -60vh;
+    top: -20vh;
     font-size: 50%;
     float: right;
+    right: 0vw;
   }
 
   .bodyText {
     position: relative;
     font-size: 10px;
     width: 50%;
-    top: -55vh;
-    left: 30vw;
+    top: -5vh;
+    left: 5vw;
   }
 
   .row3-col1 {
-    display: block;
+    display: none;
   }
 
   iframe {
@@ -268,7 +268,7 @@ div.skillsList {
   }
 
   .myImage {
-    left: 20vw;
+    left: -30vw;
   }
 
   img.rounded-circle {

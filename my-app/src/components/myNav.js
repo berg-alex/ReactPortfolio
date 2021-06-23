@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 // import Button from 'react-bootstrap/Button';
 import Navbar from 'react-bootstrap/Navbar';
+import {Container, Col, Row } from 'react-bootstrap';
 
  
 class Mynav extends Component {
@@ -8,7 +9,8 @@ class Mynav extends Component {
     return (
       <div>
         <Navbar id='nav' bg="" variant="dark">
-          <Navbar.Brand href="#home">
+          <Col className='row1-col1'>
+          <Navbar.Brand>
             <img
               alt=""
               src="https://i.ibb.co/cJBdQmk/React-Bootstrap-Logo.jpg"
@@ -18,9 +20,14 @@ class Mynav extends Component {
             />{' '}
             React Bootstrap
           </Navbar.Brand>
+          </Col>
           <ul className='navText'>
+            <Col className='row1-col2'> 
             <li className='myTitle'>React Project</li>
+            </Col>
+            <Col className='row1-col3'>
             <li className='myEmail'> Email: abergsf2017@gmail.com</li>
+            </Col>
           </ul>
         </Navbar>
       </div>

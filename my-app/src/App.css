@@ -2,11 +2,14 @@
 
 html {
   background-color: black;
+  width: 100%;
+  overflow-x: hidden;
 }
 
 #root {
   background-color: black;
-  overflow-x: hidden;
+  width: 100%;
+  
 }
 
 li {

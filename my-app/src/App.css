@@ -109,6 +109,7 @@ div.progress {
   background-color: transparent;
   font-size: 15px;
   top: 6vh;
+  right: 20px;
   float: left;
 }
 

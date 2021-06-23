@@ -110,7 +110,7 @@ class App extends Component {
         <Row className='row6'>
           <Col className='row6-col1'>
             <p class='bodyText'> 
-                This is a variation of my portfolio using react-bootstrap, Framer Motion, and Figma. The intention is to show a variety of skills vs a large quantity of a few skills. 
+                Responsive on chrome dev tools (iphone 6/7/8, iphone X, iphone 12 pro, ipad, ipad pro, laptop), <span style={{color: 'skyblue', fontWeight: 'bold'}}>this may vary from physical devices. The solution is testing physical devices, but I don't have access to all of them.</span> <span style={{fontWeight: 'normal'}}>View on desktop/laptop for best results, mobile portrait should also work.</span>
             </p>
           </Col>
         </Row>

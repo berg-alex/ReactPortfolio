@@ -107,13 +107,13 @@ class App extends Component {
           </Col>
         </Row>
 
-        <Row className='row6'>
+        {/* <Row className='row6'>
           <Col className='row6-col1'>
             <p class='bodyText'> 
                 Responsive on chrome dev tools (iphone 6/7/8, iphone X, iphone 12 pro, ipad, ipad pro, laptop), <span style={{color: 'skyblue', fontWeight: 'bold'}}>this may vary from physical devices. The solution is testing physical devices, but I don't have access to all of them.</span> <span style={{fontWeight: 'normal'}}>View on desktop/laptop for best results.</span>
             </p>
           </Col>
-        </Row>
+        </Row> */}
       </Container>
     );
   }
